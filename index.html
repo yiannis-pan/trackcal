@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Track</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-wrapper blue">
+        <div class="container">
+          <a href="# " class="brand-logo center">Tracaorie</a>
+          <ul class="right">
+            <li>
+              <a href="#" class="btn btn-clear blue lighten-3">Clear All</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <br>
+    <div class="container">
+      <div class="card">
+        <div class="card-content">
+          <span class="card-title">Add Meal/Food Item</span>
+          <form class="call">
+            <div class="row">
+              <div class="input-field col s6">
+                <input type="text" placeholder="Enter item here" id="item-name"/>
+                <label for="name">Meal</label>
+              </div>
+              <div class="input-field col s6">
+                <input type="number" placeholder="Add calories" id="item-calories"/>
+                <label for="name">Caloreis </label>
+              </div>
+              <button class="add-btn btn blue darken-3"><i class="fa fa-plus"></i>Add Meal</button>              
+              <button class="edit-btn btn orange"><i class="fa fa-pencil-square-o"></i>Update Meal</button>
+              <button class="remove-btn btn red"><i class="fa fa-remove"></i>Remove Meal</button>
+              <button class="back-btn btn grey pull-right"><i class="fa fa-chevron-circle-left"></i>Back</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- Calorie count -->
+      <h3 class="center-align">Total caloreis: <span class="total-calories">0</span></h3>
+
+      <!-- Item list -->
+      <ul id="items-list" class="collection">
+      </ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
